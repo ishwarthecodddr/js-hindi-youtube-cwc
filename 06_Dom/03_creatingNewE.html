@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        .background{
+            background-color: black;
+            color: white;
+        }</style>
+</head>
+<body class="background">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div)
+    div.className = "divC"
+    div.style.backgroundColor = 'red'
+    div.style.padding = "12px"
+    div.style.borderRadius = "12px"
+    
+    div.id = Math.round(Math.random(1,4)*10+1)
+    div.setAttribute("title","This is title")
+    //method 1 to add text
+    const addText = document.createTextNode("Chai aur code")
+    div.appendChild(addText)
+    //method 2 to add text
+    div.innerText = "chai aur code"
+    document.body.appendChild(div)
+</script>
+</html>

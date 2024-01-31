@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .background{
+        background-color: black;
+        color: white;
+    }</style>
+</head>
+<body class="background">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+<script>
+   const parent = document.querySelector('.parent')
+   console.log(parent)
+   console.log(parent.children)  //this gives array-like elements present in the parent 
+   console.log("Nodes:",parent.childNodes)
+   for (let index = 0; index < parent.children.length; index++) {
+    console.log(parent.children[index].innerHTML)
+   }
+</script>
+</body>
+</html>
