@@ -67,4 +67,4 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
 ];
 const myLike = books.filter((bk) => {return bk.publish >2000})  //don't forget to put return in case of scope meaning whenever using {}
-console.log(myLike)
+https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html
